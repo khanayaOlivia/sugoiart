@@ -302,3 +302,157 @@ nav ul {
     flex-direction: row; /* Horizontal layout */
     flex-wrap: wrap; /* Allow wrapping on small screens */
 }
+
+
+body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.payment-icon {
+    margin: 10px;
+}
+
+.payment-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 10px;
+}
+
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
