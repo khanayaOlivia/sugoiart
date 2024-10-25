@@ -1,0 +1,235 @@
+body {
+    font-family: 'Cinzel', serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f5; 
+    color: #333;
+}
+
+header {
+    background-color: #b22222; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+nav ul li a:hover {
+    color: #ffe4e1; /* Light color on hover */
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #b22222; 
+    transition: transform 0.3s; /* Add smooth scaling effect */
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #b22222; 
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #a52a2a; /* Darker border on focus */
+    outline: none; /* Remove default outline */
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #b22222; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+form button:hover {
+    background-color: #a52a2a; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #b22222; 
+    color: white;
+}
+
+#response-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #b22222; /* Firebrick red */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+#response-message.bounce {
+    animation: bounce 1s;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .gallery-container img {
+        width: 100%; /* Full width on small screens */
+        max-width: 300px; /* Limit max width */
+    }
+
+    section {
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-top: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; /* White background for icons */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.social-icon img {
+    width: 50px; /* Icon size */
+    height: 50px; /* Icon size */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.instagram {
+    background-color: #e1306c; /* Instagram color */
+    color: white; /* Text color */
+}
+
+.tiktok {
+    background-color: #69c9ef; /* TikTok color */
+    color: white; /* Text color */
+}
+
+.social-icon span {
+    margin-top: 5px; /* Space between icon and text */
+    font-weight: bold; /* Bold text */
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between logos */
+    margin-top: 20px;
+}
+
+.payment-icon img {
+    width: 100px; /* Adjust the size of the logos */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.payment-icon:hover img {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+header {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    padding: 10px; /* Add some padding */
+    background-color: #b22222; /* Optional: background color for header */
+}
+
+.logo {
+    margin-right: 20px; /* Space between logo and title */
+}
+
+.logo img {
+    width: 200px; /* Adjust the size of your logo */
+    height: auto; /* Maintain aspect ratio */
+}
