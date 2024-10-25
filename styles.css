@@ -260,3 +260,45 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.container {
+    width: 100%; /* Responsive width */
+    max-width: 1200px; /* Optional max width */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack menu items */
+        padding: 0; /* Remove default padding */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Add some spacing between items */
+    }
+
+    .gallery-container img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+nav ul {
+    border: 1px solid red; /* Temporary border for debugging */
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Space between items */
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
