@@ -230,6 +230,33 @@ header {
 }
 
 .logo img {
-    width: 200px; /* Adjust the size of your logo */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px; 
+    height: auto; 
+}
+
+body {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+.container {
+    width: 100%; /* Full width on mobile */
+    max-width: 1200px; /* Max width on larger screens */
+    margin: 0 auto; /* Center the container */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
